@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigare"
+    app:startDestination="@id/prezentare">
+
+    <fragment
+        android:id="@+id/prezentare"
+        android:name="com.example.test.Prezentare"
+        android:label="fragment_prezentare"
+        tools:layout="@layout/fragment_prezentare" >
+        <action
+            android:id="@+id/action_prezentare_to_detalii"
+            app:destination="@id/detalii" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalii"
+        android:name="com.example.test.Detalii"
+        android:label="fragment_detalii"
+        tools:layout="@layout/fragment_detalii" >
+        <action
+            android:id="@+id/action_detalii_to_poze"
+            app:destination="@id/poze" />
+        <action
+            android:id="@+id/action_detalii_to_zar"
+            app:destination="@id/zar" />
+        <action
+            android:id="@+id/action_detalii_to_vremea"
+            app:destination="@id/vremea" />
+    </fragment>
+    <fragment
+        android:id="@+id/poze"
+        android:name="com.example.test.Poze"
+        android:label="fragment_poze"
+        tools:layout="@layout/fragment_poze" />
+    <activity
+        android:id="@+id/zar"
+        android:name="com.example.test.Zar"
+        android:label="activity_zar"
+        tools:layout="@layout/activity_zar" />
+    <activity
+        android:id="@+id/vremea"
+        android:name="com.example.test.vremea"
+        android:label="activity_vremea"
+        tools:layout="@layout/activity_vremea" />
+</navigation>

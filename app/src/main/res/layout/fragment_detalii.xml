@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_detalii"
+        android:orientation="vertical"
+        tools:context=".Detalii">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textStudenti"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="164dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buton_3"
+            android:text="@string/Button1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="164dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buton_3"
+            android:text="@string/Button2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="164dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buton_3"
+            android:text="@string/ButonZar" />
+
+    </LinearLayout>
+</layout>
