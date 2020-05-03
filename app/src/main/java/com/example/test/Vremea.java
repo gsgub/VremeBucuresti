@@ -17,7 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class vremea extends AppCompatActivity {
+public class Vremea extends AppCompatActivity {
 
     String CITY = "bucharest,ro";
     String API = "b08470415be9ee5e9ad0070a8723e5d7";
